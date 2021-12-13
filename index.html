@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color | JavaScript</title>
+</head>
+
+<style>
+    body{
+        background: #de6161;
+        background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+        background: linear-gradient(to right, #2657eb, #de6161);
+        font-family: sans-serif;
+        cursor: default;
+    }
+    .parent{
+        height: 500px;
+        width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(66, 224, 245,0.1);
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+    }
+    button{
+        height: 45px;
+        width: 90px;
+        font-size: medium;
+        background-color: rgb(241, 21, 13, 0.5);
+        color: whitesmoke;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .child{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid black;
+        margin-top: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
+
+<body>
+    <div class="parent" id="parent">
+        <h1>Change Color</h1>
+        <p>Click the button to change the color of circle below</p>
+        <button onclick="changeColor()">Click Me</button>
+        <div class="child" id="child">
+            
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
