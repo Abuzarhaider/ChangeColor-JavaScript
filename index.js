@@ -1,16 +1,16 @@
 function changeColor(){
     let div = document.getElementById("child");
-    let currentColor = document.getElementById("child").style.background;
+    let currentColor = div.style.background;
     if(currentColor == "white")
     {
-        document.getElementById("child").style.background = "black";
+        div.style.background = "black";
     }
     else if(currentColor == "black")
     {
-        document.getElementById("child").style.background = "red";
+        div.style.background = "red";
     }
     else
     {
-        document.getElementById("child").style.background = "white";
+        div.style.background = "white";
     }
 }
